@@ -1,0 +1,14 @@
+# === .NET Core Backend ===
+JobHunterAPI/bin/
+JobHunterAPI/obj/
+JobHunterAPI/appsettings.Development.json
+JobHunterAPI/*.user
+
+# === React/Vite Frontend ===
+JobHunterUI/node_modules/
+JobHunterUI/dist/
+JobHunterUI/.env*
+JobHunterUI/.DS_Store
+
+# === Mac System Files ===
+.DS_Store

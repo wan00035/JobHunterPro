@@ -1,0 +1,6 @@
+@import "tailwindcss"; /* The new V4 way to import everything! */
+
+/* Add a cool background color for the whole Kanban board */
+body {
+  background-color: #f3f4f6; 
+}
