@@ -50,9 +50,11 @@ namespace JobHunterAPI.Controllers
             }
 
             // Only update the allowed fields
+            // Only update the allowed fields
             job.CompanyName = updatedJob.CompanyName;
             job.JobTitle = updatedJob.JobTitle;
-            job.InterviewDate = updatedJob.InterviewDate; 
+            job.InterviewDate = updatedJob.InterviewDate;
+            job.Priority = updatedJob.Priority; 
             job.UpdatedAt = DateTime.UtcNow;
 
             await _context.SaveChangesAsync();

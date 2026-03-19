@@ -28,6 +28,8 @@ namespace JobHunterAPI.Models
         public string? Notes { get; set; } 
         
         public DateTime? InterviewDate { get; set; }
+        
+        public PriorityLevel Priority { get; set; } = PriorityLevel.Medium;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow; 
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow; 
     }
@@ -35,10 +37,17 @@ namespace JobHunterAPI.Models
 
     public enum ApplicationStatus
     {
-        Wishlist,    
-        Applied,     
+        Wishlist,
+        Applied,
         Interviewing,
-        Offer,       
-        Rejected     
+        Offer,
+        Rejected
+    }
+    // Strict states for application priority
+    public enum PriorityLevel
+    {
+        Low,    // 0
+        Medium, // 1
+        High    // 2
     }
 }
